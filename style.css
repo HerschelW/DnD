@@ -11,18 +11,25 @@ button {
 
 body {
     background-color: rgb(86, 160, 102);
-    padding: 10%;
+    padding: 2% 10% 2% 10%;
 }
 
 #content {
     position: absolute;
+    float: left;
+}
+
+#content-right {
+  position: absolute;
+  right: 10%;
 }
 
 h2 {
     color: rgb(0, 0, 0);
+    margin-top: 2em;
 }
 
-#roll {
+.roll-style {
     /* default for <button>, but useful for <a> */
     display: inline-block;
     text-align: center;
@@ -43,25 +50,26 @@ h2 {
     background-color: #9555af;
   }
 
-  #roll:active {
+  .roll-style:active {
     transform: translateY(1px);
     filter: saturate(150%);
   }
 
-  #roll:hover {
+  .roll-style:hover {
     color: #9555af;
     border-color: currentColor;
     background-color: white;
   }
 
-#roll:hover,
-#roll:focus {
+
+.roll-style:hover,
+.roll-style:focus {
   color: #9555af;
   border-color: currentColor;
   background-color: white;
 }
 
-#roll {
+.roll-style{
     /* ... */
     /* all browsers: remove the default outline since
         we are rolling our own focus styles */
@@ -69,6 +77,6 @@ h2 {
   }
   
   /* Firefox: removes the inner border shown on focus */
-  #roll::-moz-focus-inner {
+  .roll-style::-moz-focus-inner{
     border: none;
   }

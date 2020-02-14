@@ -144,14 +144,13 @@ document.getElementById("roll").addEventListener("click", function rollAtt() {
             console.log(allStat);
             allStat.shift();
             console.log(allStat);
-            alert(allStat);
 
-var a = allStat.splice(0,1);
-var b = allStat.splice(1,1);
-var c = allStat.splice(2,1);
-var d = allStat.splice(3,1);
-var e = allStat.splice(4,1);
-var f = allStat.splice(5,1);
+var a = allStat[0];
+var b = allStat[1];
+var c = allStat[2];
+var d = allStat[3];
+var e = allStat[4];
+var f = allStat[5];
 
 document.getElementById("stats").innerHTML = a + ", " + b + ", " + c + ", " + d + ", " + e + ", and " + f;
 
@@ -166,3 +165,9 @@ stat7.splice(0,3);
 allStat.splice(0,6);
 });
 
+var strength = 0;
+var dexterity = 0;
+var constitution = 0;
+var intelligence = 0;
+var wisdom = 0;
+var charisma = 0;
